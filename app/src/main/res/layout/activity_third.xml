@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.dejun.androidcourse.activity.ThirdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <com.dejun.commonsdk.wight.CustomSearchView
+            android:id="@+id/csv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:search_backgound="#ff00"
+            app:search_hint="搜索内容"
+            app:search_left_icon="@drawable/arrow_left_back"
+            app:search_right_text="完成"></com.dejun.commonsdk.wight.CustomSearchView>
+        <com.dejun.commonsdk.wight.BottomMenuView
+            android:id="@+id/bmv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:fifth_drawable="@drawable/tab_better_pressed"
+            app:fifth_text="你好"
+            app:menu_center_visible="true"
+            app:menu_text_color="#000"
+            app:menu_text_size="12sp" />
+        <LinearLayout
+            android:id="@+id/main_contaier"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/csv"
+            android:layout_above="@id/bmv"
+            android:orientation="horizontal"
+            android:background="#ff00">
+
+            <com.dejun.commonsdk.wight.AlignTextView
+                android:id="@+id/cb_align_text_view1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                android:textIsSelectable="true"
+                android:textSize="14sp"
+                app:punctuationConvert="true"/>
+            <com.dejun.commonsdk.wight.AlignTextView
+                android:id="@+id/cb_align_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                android:textIsSelectable="true"
+                android:textSize="14sp"
+                app:punctuationConvert="true"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header_layout"
+        app:menu="@menu/drawer_menu"
+        app:itemIconTint="#ff00"
+        />
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidCourse</string>
+    <string name="tab_menu_alert">提醒</string>
+    <string name="tab_menu_profile">信息</string>
+    <string name="tab_menu_pay">我的</string>
+    <string name="tab_menu_setting">设置</string>
+    <string name="new_name">你好我是%1$3s%2$4s</string>
+    <string name="new_age">我今年%1$d岁了</string>
+    <string name="new_money">我今年挣了%1$.2f元</string>
+
+
+</resources>
