@@ -8,12 +8,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center">
-        <io.vov.vitamio.widget.VideoView
-            android:id="@+id/vv_function"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone"
-            />
         <ImageView
             android:id="@+id/iv_function"
             android:layout_width="match_parent"

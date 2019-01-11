@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/function" />
             <option value="$PROJECT_DIR$/message" />
             <option value="$PROJECT_DIR$/setting" />
-            <option value="$PROJECT_DIR$/vitamio" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

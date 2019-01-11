@@ -23,8 +23,6 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.util.List;
 
-import io.vov.vitamio.Vitamio;
-import io.vov.vitamio.widget.VideoView;
 
 /**
  * Author:DoctorWei
@@ -58,8 +56,6 @@ public class FunctionFragment extends BaseFragment<FunctionView, FunctionPresent
 
     @Override
     protected void init(View view) {
-        //必须写这个，初始化加载库文件
-        Vitamio.initialize(_mActivity);
         mRvFunction = (RecyclerView) view.findViewById(R.id.rv_function);
         mLayoutManager = new ViewPagerLayoutManager(_mActivity, OrientationHelper.VERTICAL);
         mRvFunction.setLayoutManager(mLayoutManager);
@@ -181,13 +177,11 @@ public class FunctionFragment extends BaseFragment<FunctionView, FunctionPresent
     private void playVideo(int position) {
         DataBean dataBean = functionAdapter.getItems().get(position);
         View itemView = mRvFunction.getChildAt(0);
-        final VideoView videoView = itemView.findViewById(R.id.vv_function);
         final MediaPlayer[] mediaPlayer = new MediaPlayer[1];
-        videoView.start();
+
     }
     private void releaseVideo(int index){
         View itemView = mRvFunction.getChildAt(index);
-       VideoView videoView = itemView.findViewById(R.id.vv_function);
-       videoView.stopPlayback();
+
     }
 }
