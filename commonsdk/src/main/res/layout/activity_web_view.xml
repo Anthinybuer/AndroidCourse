@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dejun.commonsdk.WebViewActivity">
+    <com.dejun.commonsdk.wight.CustomActionBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff1"
+        app:left_icon="@drawable/arrow_left_back"
+        app:title="标题"
+        app:right_icon="@drawable/arrow_left_back">
+    </com.dejun.commonsdk.wight.CustomActionBar>
+    <com.dejun.commonsdk.wight.CustomSearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:search_left_icon="@drawable/arrow_left_back"
+        app:search_hint="搜索内容"
+        app:search_right_text="完成">
+    </com.dejun.commonsdk.wight.CustomSearchView>
+    <ProgressBar
+        android:id="@+id/commonsdk_webview_pb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <WebView
+        android:id="@+id/commonsdk_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#afe"></WebView>
+
+
+</LinearLayout>

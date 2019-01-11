@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏 -->
+    <declare-styleable name="CustomActionBar">
+        <attr name="title" format="string"/>
+        <attr name="left_icon" format="reference"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="custom_actionbar_type" format="integer"/>
+    </declare-styleable>
+    <!--流失布局 -->
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--搜索框 -->
+    <declare-styleable name="CustomSearchView">
+        <attr name="search_hint" format="string"></attr>
+        <attr name="search_left_icon" format="reference"></attr>
+        <attr name="search_right_icon" format="reference"></attr>
+        <attr name="search_left_text" format="string"></attr>
+        <attr name="search_right_text" format="string"></attr>
+        <attr name="search_backgound" format="color"></attr>
+    </declare-styleable>
+    <!--底部菜单-->
+    <declare-styleable name="BottomMenuView">
+        <attr name="first_drawable" format="reference"/>
+        <attr name="first_text" format="string"/>
+        <attr name="second_drawable" format="reference"/>
+        <attr name="second_text" format="string"/>
+        <attr name="third_drawable" format="reference"/>
+        <attr name="third_text" format="string"/>
+        <attr name="fourth_drawable" format="reference"/>
+        <attr name="fourth_text" format="string"/>
+        <attr name="fifth_drawable" format="reference"/>
+        <attr name="fifth_text" format="string"/>
+        <attr name="menu_text_color" format="color"/>
+        <attr name="menu_text_size" format="dimension"/>
+        <attr name="menu_center_visible" format="boolean"/>
+    </declare-styleable>
+    <!--字间距自换行自变色-->
+    <declare-styleable name="SpaceTextView">
+        <attr name="text_space" format="dimension"></attr>
+        <attr name="text_content" format="string"></attr>
+    </declare-styleable>
+</resources>

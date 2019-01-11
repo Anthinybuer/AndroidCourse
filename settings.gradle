@@ -1,0 +1,1 @@
+include ':app', ':commonsdk', ':beauty', ':function', ':message', ':setting', ':vitamio'

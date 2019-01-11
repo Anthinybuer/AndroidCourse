@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_one"
+            android:icon="@drawable/drawer_default_icon"
+            android:title="文件" />
+        <item
+            android:id="@+id/navigation_item_two"
+            android:icon="@drawable/drawer_default_icon"
+            android:title="目录" />
+        <item
+            android:id="@+id/navigation_item_three"
+            android:icon="@drawable/drawer_default_icon"
+            android:title="佳佳" />
+        <item
+            android:id="@+id/navigation_item_four"
+            android:icon="@drawable/drawer_default_icon"
+            android:title="闹钟" />
+        <item
+            android:id="@+id/navigation_item_five"
+            android:icon="@drawable/drawer_default_icon"
+            android:title="设置" />
+
+
+        <!--<item-->
+            <!--android:id="@+id/navigation_subheader_four"-->
+            <!--android:icon="@drawable/drawer_default_icon"-->
+            <!--android:title="子条目">-->
+            <!--<menu>-->
+                <!--<item-->
+                    <!--android:id="@+id/navigation_sub_item_eight"-->
+                    <!--android:icon="@drawable/drawer_default_icon"-->
+                    <!--android:title="佳佳" />-->
+                <!--<item-->
+                    <!--android:id="@+id/navigation_sub_item_nine"-->
+                    <!--android:icon="@drawable/drawer_default_icon"-->
+                    <!--android:title="闹钟" />-->
+            <!--</menu>-->
+        <!--</item>-->
+    </group>
+</menu>

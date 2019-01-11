@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">commonSdk</string>
+    <string name="dont_get_album_photo">没有获取到相册的图片</string>
+</resources>
