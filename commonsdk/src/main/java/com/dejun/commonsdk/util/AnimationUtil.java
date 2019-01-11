@@ -16,7 +16,7 @@ import android.view.animation.DecelerateInterpolator;
 public class AnimationUtil {
     public static final Long ANIMA_TIME = 300L;
     public static final int DECELERATE = 2;//减速
-    public static final int ACCELERATE = 1;//加速
+    public static final int ACCELERATE = 1;//加速sss
     /**
      * 旋转动画
      *
